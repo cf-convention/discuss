@@ -16,5 +16,5 @@ Please note that it is fine to group together a number of proposals in a single 
 **Date** Also used in the vocabulary editor.
 For each term please try to give the following:
 **- Term** Proposed term to appear in the vocabulary
-**- Definition** A brief definition to explain the meaning of the term
+**- Description** A brief description to explain the meaning of the term
 **- Units** (If applicable).
