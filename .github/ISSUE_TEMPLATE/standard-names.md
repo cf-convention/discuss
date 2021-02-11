@@ -1,5 +1,5 @@
 ---
-name: Standard name template
+name: Standard Names
 about: For proposing changes to the standard names table, area types table or standardized
   region list.
 title: " Standard names: *add your own title here*"
