@@ -6,7 +6,7 @@ on:
 
 jobs:
   processLabelAction:
-    name: Process Lavel Action
+    name: Process Label Action
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
