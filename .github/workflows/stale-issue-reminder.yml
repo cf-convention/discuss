@@ -6,7 +6,7 @@ name: Comment on stale standard name issues
 on:
   schedule:
   #- cron: '0 9 * * 1'
-  - cron: '0 17 * * *'
+  - cron: '02 16 * * *'
 jobs:
   stale:
 
