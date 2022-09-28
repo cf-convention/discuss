@@ -14,6 +14,6 @@ jobs:
         uses: hramos/label-actions@v1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          config-path: '.github/label-actions.yml'
+          configuration-path: '.github/label-actions.yml'
 
       
