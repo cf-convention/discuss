@@ -6,7 +6,7 @@ name: Comment on stale standard name issues
 on:
   schedule:
   #- cron: '0 9 * * 1'
-  - cron: '02 16 * * *'
+  - cron: '0 8 * * *'
 jobs:
   stale:
 
@@ -15,10 +15,10 @@ jobs:
       issues: write
 
     steps:
-    - uses: actions/stale@v4
+    - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         stale-issue-message: 'This issue has had no activity in the last 21 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @japamment @feggleton'
         days-before-stale: 1
         exempt-all-assignees: true
-        issue-labels: standard name
+        stale-issue-label: moderator attention
