@@ -6,7 +6,7 @@ name: Comment on stale standard name issues
 on:
   schedule:
   #- cron: '0 9 * * 1'
-  - cron: '0 9 * * *'
+  - cron: '0 10 * * *'
 jobs:
   stale:
     if: ${{ github.event.label.name == 'standard name'}}
@@ -19,5 +19,5 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-stale: 1
-        stale-issue-message: 'This issue has had no activity in the last 21 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @japamment @feggleton'
+        stale-issue-message: 'This issue has had no activity in the last 21 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton'
         stale-issue-label: moderator attention
