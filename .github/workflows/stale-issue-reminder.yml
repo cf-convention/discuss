@@ -6,10 +6,10 @@ name: Comment on stale standard name issues
 on:
   schedule:
   #- cron: '0 9 * * 1'
-  - cron: '50 15 * * *'
+  - cron: '10 * * * *'
 jobs:
   stale:
-    #if: ${{ github.issue.label.name == 'standard name'}}
+    if: ${{ github.action.label.name == 'standard name'}}
     runs-on: ubuntu-latest
     permissions:
       issues: write
