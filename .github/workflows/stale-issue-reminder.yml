@@ -9,7 +9,6 @@ on:
   - cron: '10 * * * *'
 jobs:
   stale:
-    #if: ${{ github.action.label.name == 'standard name'}}
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -18,6 +17,21 @@ jobs:
     - uses: actions/stale@v5
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        only: issues
+        # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
+        exemptLabels:
+           -'accept within 7 days'
+           -'accepted'
+           -'bug'
+           -'documentation'
+           -'duplicate'
+           -'enhancement'
+           -'good first issue'
+           -'help wanted'
+           -'invalid'
+           -'question'
+           -'Stale'
+           -'wontfix'
         stale-issue-message: 'This issue has had no activity in the last 21 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton'
         days-before-stale: 1
         exempt-all-assignees: true
