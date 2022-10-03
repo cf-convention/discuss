@@ -9,7 +9,7 @@ on:
   - cron: '0 10 * * *'
 jobs:
   stale:
-    if: ${{ github.issue.label.name == 'standard name'}}
+    #if: ${{ github.issue.label.name == 'standard name'}}
     runs-on: ubuntu-latest
     permissions:
       issues: write
