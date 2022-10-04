@@ -17,9 +17,9 @@ jobs:
     - uses: actions/stale@v3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        only: issues
+        #only: issues
         # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
-        exemptLabels:
+        exempt-issue-labels:
            -'accept within 7 days'
            -'accepted'
            -'bug'
