@@ -5,8 +5,8 @@ name: Comment on stale standard name issues
 #thinking this should only run once a month on the 1st day
 on:
   schedule:
-  #- cron: '0 9 * * 1'
-  - cron: '0 10 * * *'
+  - cron: '0 9 * * 1'
+  #- cron: '0 10 * * *'
 jobs:
   stale:
     runs-on: ubuntu-latest
@@ -17,21 +17,10 @@ jobs:
     - uses: actions/stale@v3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        #only: issues
         # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
         #exempt-issue-labels:
            #-'accept within 7 days'
-           #-'accepted'
-           #-'bug'
-           #-'documentation'
-           #-'duplicate'
-           #-'enhancement'
-           #-'good first issue'
-           #-'help wanted'
-           #-'invalid'
-           #-'question'
-           #-'Stale'
-           #-'wontfix'
+        days-before-close: -1   
         only-issue-labels: standard name
         stale-issue-message: 'This issue has had no activity in the last 21 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton'
         days-before-stale: 1
