@@ -5,7 +5,7 @@ name: Comment on stale standard name issues
 #thinking this should only run once a month on the 1st day
 on:
   schedule:
-  - cron: '0 9 * * 1'
+  - cron: '0 9 1 * *'
   #- cron: '0 10 * * *'
 jobs:
   stale:
@@ -23,6 +23,6 @@ jobs:
         days-before-close: -1   
         only-issue-labels: standard name
         stale-issue-message: 'This issue has had no activity in the last 21 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton'
-        days-before-stale: 1
+        days-before-stale: 21
         exempt-all-assignees: true
         stale-issue-label: moderator attention
