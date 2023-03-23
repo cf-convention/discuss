@@ -21,7 +21,7 @@ jobs:
            #-'accept within 7 days'
         days-before-close: -1   # disabled
         only-issue-labels: standard name
-        stale-issue-message: 'This issue has had no activity in the last 30 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton'
+        stale-issue-message: 'This issue has had no activity in the last 30 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton @japamment '
         days-before-stale: 30
         exempt-all-assignees: true
         stale-issue-label: moderator attention
