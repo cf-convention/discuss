@@ -3,7 +3,7 @@ name: Standard Names
 about: For proposing changes to the standard names table, area types table or standardized
   region list.
 title: " Standard names: *add your own title here*"
-labels: standard name
+labels: add to cfeditor, standard name
 assignees: ''
 
 ---
