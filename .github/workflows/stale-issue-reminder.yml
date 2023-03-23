@@ -1,0 +1,27 @@
+# This workflow comments on issues that have had no activity for a specified amount of time. This is a reminder for the community to comment and for standard name moderators to comment.
+
+name: Comment on stale standard name issues
+
+# this currently runs once a day - the label can be manually removed when comments are added (no longer stale) and this action will run again on an issue which has gone stale.
+on:
+  schedule:
+  - cron: '0 9 * * *'
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+    - uses: actions/stale@v7
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        # Issues or Pull Requests with these labels will never be considered stale. Set to `[]` to disable
+        #exempt-issue-labels:
+           #-'accept within 7 days'
+        days-before-close: -1   # disabled
+        only-issue-labels: standard name
+        stale-issue-message: 'This issue has had no activity in the last 30 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton @japamment '
+        days-before-stale: 30
+        exempt-all-assignees: true
+        stale-issue-label: moderator attention
