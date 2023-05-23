@@ -20,7 +20,8 @@ jobs:
         exempt-issue-labels: 'accepted'
         days-before-close: -1   # disabled
         only-issue-labels: standard name
-        stale-issue-message: 'This issue has had no activity in the last 30 days. This is a reminder to please comment on standard name requests to assist with agreement and acceptance. Standard name moderators are also reminded to review @feggleton @japamment '
+        stale-issue-message: 'This issue has had no activity in the last 30 days. If you proposed this issue or have contributed to the discussion, please reply to any outstanding concerns. If there has been little or no discussion, please comment on this issue, to assist with reaching a decision. If the proposal seems to have come to a consensus, please wait for the moderators to take the next steps towards acceptance. Standard name moderators are also reminded to review. @feggleton @japamment'
+
         days-before-stale: 30
         exempt-all-assignees: true
         stale-issue-label: moderator attention
