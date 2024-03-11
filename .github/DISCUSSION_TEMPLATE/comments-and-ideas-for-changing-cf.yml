@@ -3,7 +3,7 @@ body:
   attributes:
     label: Topic for discussion
     description: |
-      Comment on some aspect of CF that you think we should consider changing: how it could be improved, what's wrong with it, what its purposes should be, whether it could be managed better, etc. Please add one or more of the labels `conventions`, `vocabulary` (standard names etc.), `website`, `governance` or `GitHub`, to indicate which area of CF the discussion is relevant to, by clicking on the cogwheel &#x2699; next to **Labels** on the top right of this form. Apply more than one label if it's unclear which is applicable. You can also add and remove labels after starting the discussion.
+      Comment on some aspect of CF that you think we should consider changing: how it could be improved, what's wrong with it, what its purposes should be, whether it could be managed better, etc. Please add one or more of the labels `conventions`, `vocabulary` (standard names etc.), `website`, `governance` or `GitHub`, to indicate which area of CF the discussion is relevant to, by clicking on the cogwheel :gear: next to **Labels** on the top right of this form. Apply more than one label if it's unclear which is applicable. You can also add and remove labels after starting the discussion.
     placeholder: Type in here. Markdown is supported, and you will be able to preview your text before posting it.
   validations:
     required: true
