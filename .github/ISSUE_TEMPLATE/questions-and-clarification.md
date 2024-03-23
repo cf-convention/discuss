@@ -1,6 +1,6 @@
 ---
 name: Questions and Clarification
-about: Please use [CF GitHub organization Discussions](https://github.com/orgs/cf-convention/discussions/new?category=q-a-about-using-cf) to ask a question about the interpretation and use of CF
+about: Please use https://github.com/orgs/cf-convention/discussions/new?category=q-a-about-using-cf to ask a question about the interpretation and use of CF
 title: ''
 labels: question
 assignees: ''
